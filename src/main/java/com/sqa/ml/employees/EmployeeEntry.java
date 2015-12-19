@@ -5,7 +5,7 @@
  * Instructor<br>
  * Created: Nov 23, 2015
  */
-package com.sqa.jf.employees;
+package com.sqa.ml.employees;
 
 import java.util.Scanner;
 
@@ -103,8 +103,7 @@ public class EmployeeEntry {
 		// For the length of all the newly entered employees...
 		for (int i = 0; i < names.length; i++) {
 			// Display their respective information
-			System.out.println(i + 1 + ") Name:" + names[i] + " Age:" + ages[i] + " Address:" + addresses[i]
-					+ " Job Title:" + jobTitles[i]);
+			System.out.println(i + 1 + ") Name:" + names[i] + " Age:" + ages[i] + " Address:" + addresses[i] + " Job Title:" + jobTitles[i]);
 		}
 	}
 
