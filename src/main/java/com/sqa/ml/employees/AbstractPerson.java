@@ -69,16 +69,8 @@ public class AbstractPerson implements IPerson {
 	 * @param age
 	 *            the age to set
 	 */
-	public void setAge(String age) {
+	public void setAge(int age) {
 		this.age = age;
-	}
-
-	/**
-	 * @param name
-	 *            the name to set
-	 */
-	public void setName(int name) {
-		this.name = name;
 	}
 
 	/**
@@ -95,13 +87,15 @@ public class AbstractPerson implements IPerson {
 	@Override
 	public String toString() {
 		StringBuilder builder = new StringBuilder();
-		builder.append("AbstractPerson [address=");
+		builder.append("Class");
+		builder.append(this.getClass().getSimpleName());
+		builder.append("who lives at ");
 		builder.append(this.address);
-		builder.append(", age=");
+		builder.append("and is only ");
 		builder.append(this.age);
-		builder.append(", name=");
+		builder.append(" years old, Welcome ");
 		builder.append(this.name);
-		builder.append("]");
+		builder.append("!");
 		return builder.toString();
 	}
 }
